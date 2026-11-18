@@ -11,15 +11,16 @@ import torch
 import numpy as np
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 
-def compute_hsic(z_s: torch.Tensor, z_e: torch.Tensor, sigma: float = 1.0) -> torch.Tensor:
+def compute_hsic(z_s: torch.Tensor, z_e: torch.Tensor, sigma: float = None) -> torch.Tensor:
     """
     Computes the Hilbert-Schmidt Independence Criterion (HSIC) using an RBF kernel.
     HSIC = 0 if and only if z_s and z_e are statistically independent.
+    Uses the classical median heuristic (Gretton et al.) for adaptive bandwidth selection when sigma is None.
     
     Args:
         z_s: Invariant biological signal representation [B, d]
         z_e: Environmental confounder representation [B, d]
-        sigma: Kernel bandwidth parameter
+        sigma: Optional manual kernel bandwidth parameter. If None, uses median pairwise distance.
     """
     B = z_s.size(0)
     if B <= 1:
@@ -27,13 +28,20 @@ def compute_hsic(z_s: torch.Tensor, z_e: torch.Tensor, sigma: float = 1.0) -> to
         
     H = torch.eye(B, device=z_s.device) - (1.0 / B) * torch.ones((B, B), device=z_s.device)
     
-    # RBF Gram matrices
+    # RBF Gram matrices with adaptive bandwidth
     dist_s = torch.cdist(z_s, z_s) ** 2
     dist_e = torch.cdist(z_e, z_e) ** 2
     
-    K_s = torch.exp(-dist_s / (2.0 * (sigma ** 2) + 1e-6))
-    K_e = torch.exp(-dist_e / (2.0 * (sigma ** 2) + 1e-6))
-    
+    if sigma is None:
+        med_s = torch.median(dist_s).clamp(min=1e-6)
+        med_e = torch.median(dist_e).clamp(min=1e-6)
+        K_s = torch.exp(-dist_s / med_s)
+        K_e = torch.exp(-dist_e / med_e)
+    else:
+        gamma = 2.0 * (sigma ** 2) + 1e-6
+        K_s = torch.exp(-dist_s / gamma)
+        K_e = torch.exp(-dist_e / gamma)
+        
     HK_s = torch.matmul(H, K_s)
     HK_e = torch.matmul(H, K_e)
     
