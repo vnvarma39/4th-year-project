@@ -1,0 +1,52 @@
+[
+  {
+    "Name": "Method 0 (PAMT Baseline)",
+    "ID_Acc": 100.0,
+    "OOD1_Acc": 24.799999594688416,
+    "OOD2_Acc": 63.599997758865356,
+    "OOD3_Acc": 42.399999499320984,
+    "OOD_Gap": 57.600000500679016,
+    "Confounder_Leakage": 0.12153905254950802,
+    "Train_Time_s": 35.0627875328064
+  },
+  {
+    "Name": "Method 1 (PI-SSM Dynamics)",
+    "ID_Acc": 100.0,
+    "OOD1_Acc": 24.799999594688416,
+    "OOD2_Acc": 24.799999594688416,
+    "OOD3_Acc": 24.799999594688416,
+    "OOD_Gap": 75.20000040531158,
+    "Confounder_Leakage": 0.22272847778046911,
+    "Train_Time_s": 34.70232343673706
+  },
+  {
+    "Name": "Method 2 (SCM-HSIC Causal)",
+    "ID_Acc": 100.0,
+    "OOD1_Acc": 36.399999260902405,
+    "OOD2_Acc": 95.59999704360962,
+    "OOD3_Acc": 47.999998927116394,
+    "OOD_Gap": 52.000001072883606,
+    "Confounder_Leakage": 0.017216056958013082,
+    "Train_Time_s": 23.7964506149292
+  },
+  {
+    "Name": "Method 3 (Operon FGW-OT)",
+    "ID_Acc": 100.0,
+    "OOD1_Acc": 24.799999594688416,
+    "OOD2_Acc": 41.999998688697815,
+    "OOD3_Acc": 24.799999594688416,
+    "OOD_Gap": 75.20000040531158,
+    "Confounder_Leakage": 0.1938375803141608,
+    "Train_Time_s": 19.306157112121582
+  },
+  {
+    "Name": "Method 4 (Unified PCMT)",
+    "ID_Acc": 100.0,
+    "OOD1_Acc": 59.60000157356262,
+    "OOD2_Acc": 100.0,
+    "OOD3_Acc": 100.0,
+    "OOD_Gap": 0.0,
+    "Confounder_Leakage": 0.09456660568441302,
+    "Train_Time_s": 48.8365592956543
+  }
+]
