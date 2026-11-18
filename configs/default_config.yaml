@@ -1,0 +1,35 @@
+# PCMT Default Experiment & Model Configuration
+
+project:
+  name: "Bt Cotton Cry Gene Detection & Authentic Spatial Biology Benchmark"
+  grant: "AgriHub / IIT Indore"
+  pi:
+    - "Dr. Neha Bharill"
+    - "Dr. Milind Ratnaparkhe"
+    - "Dr. Om Prakash Patel"
+
+model:
+  in_dim: 1024
+  d_model: 128
+  d_state: 32
+  n_genes: 200
+  n_pathways: 10
+  num_classes: 7
+  epsilon: 0.05
+  use_pino: true
+  use_counterfactual: true
+
+training:
+  batch_size: 16
+  epochs: 60
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  scheduler: "cosine_annealing"
+  hsic_weight: 0.05
+  conformal_alpha: 0.10  # 90% confidence level
+
+data:
+  dataset_name: "10x_Genomics_Visium_HD_Arabidopsis"
+  num_samples_per_domain: 100
+  train_split: 0.71
+  val_split: 0.29
