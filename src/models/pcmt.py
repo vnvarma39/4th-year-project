@@ -169,13 +169,14 @@ class PCMTStandard(nn.Module):
         self.fc_env = nn.Sequential(nn.Linear(d_model, 64), nn.LayerNorm(64), nn.GELU(), nn.Linear(64, 64))
         self.classifier = nn.Sequential(nn.Linear(64, 32), nn.GELU(), nn.Linear(32, num_classes))
 
-    def sinkhorn(self, cost: torch.Tensor) -> torch.Tensor:
+    def sinkhorn(self, cost: torch.Tensor, n_iters: int = 20) -> torch.Tensor:
         B, N, M = cost.shape
         K = torch.exp(-cost / self.epsilon) + 1e-9
         u = torch.ones(B, N, device=cost.device) / N
-        for _ in range(10):
+        for _ in range(n_iters):
             v = (1.0 / M) / (torch.bmm(K.transpose(1, 2), u.unsqueeze(-1)).squeeze(-1) + 1e-9)
             u = (1.0 / N) / (torch.bmm(K, v.unsqueeze(-1)).squeeze(-1) + 1e-9)
+        v = (1.0 / M) / (torch.bmm(K.transpose(1, 2), u.unsqueeze(-1)).squeeze(-1) + 1e-9)
         return u.unsqueeze(-1) * K * v.unsqueeze(1)
 
     def forward(self, patch_features: torch.Tensor, gene_expr: torch.Tensor, coords: torch.Tensor = None):
@@ -188,7 +189,9 @@ class PCMTStandard(nn.Module):
         
         cost = 1.0 - torch.bmm(F.normalize(K, dim=-1), F.normalize(Q, dim=-1).transpose(1, 2))
         T = self.sinkhorn(cost)
-        aligned = torch.bmm(T.transpose(1, 2) * wsi.size(1), V)
+        # Normalized conditional transport expectation: P(patch i | pathway j)
+        attn_weights = T.transpose(1, 2) / (T.transpose(1, 2).sum(dim=-1, keepdim=True) + 1e-9)
+        aligned = torch.bmm(attn_weights, V)
         fused = self.out_proj(aligned) + Q
         
         h = fused.mean(dim=1)
@@ -229,13 +232,14 @@ class PCMT_Novel(nn.Module):
         
         self.causal_head = CounterfactualInterventionHead(in_dim=d_model, latent_dim=64, num_classes=num_classes)
 
-    def sinkhorn(self, cost: torch.Tensor) -> torch.Tensor:
+    def sinkhorn(self, cost: torch.Tensor, n_iters: int = 20) -> torch.Tensor:
         B, N, M = cost.shape
         K = torch.exp(-cost / self.epsilon) + 1e-9
         u = torch.ones(B, N, device=cost.device) / N
-        for _ in range(10):
+        for _ in range(n_iters):
             v = (1.0 / M) / (torch.bmm(K.transpose(1, 2), u.unsqueeze(-1)).squeeze(-1) + 1e-9)
             u = (1.0 / N) / (torch.bmm(K, v.unsqueeze(-1)).squeeze(-1) + 1e-9)
+        v = (1.0 / M) / (torch.bmm(K.transpose(1, 2), u.unsqueeze(-1)).squeeze(-1) + 1e-9)
         return u.unsqueeze(-1) * K * v.unsqueeze(1)
 
     def forward(self, patch_features: torch.Tensor, gene_expr: torch.Tensor, coords: torch.Tensor = None, do_domain=None):
@@ -252,7 +256,9 @@ class PCMT_Novel(nn.Module):
         
         cost = 1.0 - torch.bmm(F.normalize(K, dim=-1), F.normalize(Q, dim=-1).transpose(1, 2))
         T = self.sinkhorn(cost)
-        aligned = torch.bmm(T.transpose(1, 2) * patch_features.size(1), V)
+        # Normalized conditional transport expectation: P(patch i | pathway j)
+        attn_weights = T.transpose(1, 2) / (T.transpose(1, 2).sum(dim=-1, keepdim=True) + 1e-9)
+        aligned = torch.bmm(attn_weights, V)
         fused = self.out_proj(aligned) + Q
         
         logits, z_s, z_e = self.causal_head(fused, do_domain=do_domain)
