@@ -1,0 +1,29 @@
+# Large Archives & Datasets
+*.zip
+*.tar.gz
+*.ndpi
+*.h5
+*.hdf5
+*.parquet
+*.pt
+*.pth
+*.ckpt
+*.npy
+
+# Raw data & legacy directories
+PCMT_Project/
+data/arabidopsis_spatial/
+proxy_wsi_rnaseq_data/
+Cotton_PAMT_Results/
+Original_PAMT_Results/
+
+# Python Cache & Environments
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+env/
+.idea/
+.vscode/
+*.log
