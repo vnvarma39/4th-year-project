@@ -1,0 +1,186 @@
+{
+  "Arabidopsis-8um (Visium HD)": {
+    "PCMT-Standard": {
+      "clean_acc": 66.50246305418719,
+      "peak_acc": 66.50246305418719,
+      "macro_f1": 64.31475612169825,
+      "ood_acc": 56.15763546798029,
+      "noise_drop": 10.344827586206897,
+      "cry_auc": 79.1518034086405,
+      "conformal_cov": 95.09803921568627,
+      "set_size": 3.0588235294117645,
+      "latency_ms": 244.73769664764404
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 69.45812807881774,
+      "peak_acc": 69.45812807881774,
+      "macro_f1": 67.85513964740021,
+      "ood_acc": 54.679802955665025,
+      "noise_drop": 14.778325123152712,
+      "cry_auc": 84.93856520015854,
+      "conformal_cov": 98.0392156862745,
+      "set_size": 2.5,
+      "latency_ms": 186.03558540344238
+    },
+    "PCMT-Trio + Novelty (PINO-Graph)": {
+      "clean_acc": 70.44334975369459,
+      "peak_acc": 70.44334975369459,
+      "macro_f1": 67.69636583099692,
+      "ood_acc": 64.5320197044335,
+      "noise_drop": 5.911330049261096,
+      "cry_auc": 84.99801823226318,
+      "conformal_cov": 97.05882352941177,
+      "set_size": 1.5784313725490196,
+      "latency_ms": 275.8321762084961
+    },
+    "PCMT-Trio + Google-C2S (Unmasking)": {
+      "clean_acc": 71.92118226600985,
+      "peak_acc": 71.92118226600985,
+      "macro_f1": 70.30631151970422,
+      "ood_acc": 56.15763546798029,
+      "noise_drop": 15.763546798029559,
+      "cry_auc": 91.85493460166468,
+      "conformal_cov": 93.13725490196079,
+      "set_size": 1.5196078431372548,
+      "latency_ms": 280.2464723587036
+    }
+  },
+  "Arabidopsis-16um (Multi-Scale)": {
+    "PCMT-Standard": {
+      "clean_acc": 66.99507389162561,
+      "peak_acc": 66.99507389162561,
+      "macro_f1": 65.62350864427803,
+      "ood_acc": 62.06896551724138,
+      "noise_drop": 4.926108374384228,
+      "cry_auc": 75.44589774078479,
+      "conformal_cov": 93.13725490196079,
+      "set_size": 2.0098039215686274,
+      "latency_ms": 218.4885025024414
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 66.50246305418719,
+      "peak_acc": 66.50246305418719,
+      "macro_f1": 64.50348675671252,
+      "ood_acc": 62.06896551724138,
+      "noise_drop": 4.433497536945808,
+      "cry_auc": 86.82124455013873,
+      "conformal_cov": 98.0392156862745,
+      "set_size": 2.2941176470588234,
+      "latency_ms": 221.2954044342041
+    },
+    "PCMT-Trio + Novelty (PINO-Graph)": {
+      "clean_acc": 76.84729064039408,
+      "peak_acc": 76.84729064039408,
+      "macro_f1": 75.6151729995104,
+      "ood_acc": 71.42857142857143,
+      "noise_drop": 5.418719211822648,
+      "cry_auc": 88.92191835116925,
+      "conformal_cov": 100.0,
+      "set_size": 1.5,
+      "latency_ms": 255.10811805725098
+    },
+    "PCMT-Trio + Google-C2S (Unmasking)": {
+      "clean_acc": 72.9064039408867,
+      "peak_acc": 72.9064039408867,
+      "macro_f1": 71.2901531857588,
+      "ood_acc": 60.591133004926114,
+      "noise_drop": 12.31527093596059,
+      "cry_auc": 90.78478002378122,
+      "conformal_cov": 100.0,
+      "set_size": 1.6176470588235294,
+      "latency_ms": 271.5303897857666
+    }
+  },
+  "Zea-Mays (Maize Shoot Meristem)": {
+    "PCMT-Standard": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 92.0,
+      "set_size": 0.92,
+      "latency_ms": 175.6844997406006
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 89.33333333333333,
+      "set_size": 0.8933333333333333,
+      "latency_ms": 433.4511995315552
+    },
+    "PCMT-Trio + Novelty (PINO-Graph)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 90.66666666666666,
+      "set_size": 0.9066666666666666,
+      "latency_ms": 286.8489980697632
+    },
+    "PCMT-Trio + Google-C2S (Unmasking)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 73.33333333333333,
+      "set_size": 0.7333333333333333,
+      "latency_ms": 234.3949317932129
+    }
+  },
+  "Gossypium-Bt-Cotton (Dip-PCR)": {
+    "PCMT-Standard": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 93.33333333333333,
+      "set_size": 0.9333333333333333,
+      "latency_ms": 144.7345495223999
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 90.0,
+      "set_size": 0.9,
+      "latency_ms": 169.96164321899414
+    },
+    "PCMT-Trio + Novelty (PINO-Graph)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 86.66666666666667,
+      "set_size": 0.8666666666666667,
+      "latency_ms": 229.90469932556152
+    },
+    "PCMT-Trio + Google-C2S (Unmasking)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 78.33333333333333,
+      "set_size": 0.7833333333333333,
+      "latency_ms": 246.77796363830566
+    }
+  }
+}
