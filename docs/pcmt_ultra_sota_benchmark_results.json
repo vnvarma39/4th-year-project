@@ -1,0 +1,287 @@
+{
+  "1. Gossypium-Bt-Cotton (Target Transgenic)": {
+    "PCMT-Standard": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 91.11111111111111,
+      "set_size": 0.9111111111111111,
+      "latency_ms": 217.62664318084717
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 98.88888888888889,
+      "set_size": 0.9888888888888889,
+      "latency_ms": 1331.2703609466553
+    },
+    "PCMT-Trio + Novelty (PINO-Graph)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 92.22222222222223,
+      "set_size": 0.9222222222222223,
+      "latency_ms": 1257.7028036117554
+    },
+    "PCMT-Trio + Google-C2S (Unmasking)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 92.22222222222223,
+      "set_size": 0.9222222222222223,
+      "latency_ms": 881.6416263580322
+    },
+    "PCMT-Ultra (TransgeneFlow-PINO)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 99.44444444444444,
+      "noise_drop": 0.5555555555555571,
+      "cry_auc": 100.0,
+      "conformal_cov": 96.66666666666667,
+      "set_size": 0.9666666666666667,
+      "latency_ms": 922.7397441864014
+    }
+  },
+  "2. Nicotiana-Transgenic (Cry Bioassay)": {
+    "PCMT-Standard": {
+      "clean_acc": 98.7878787878788,
+      "peak_acc": 98.7878787878788,
+      "macro_f1": 98.96825396825398,
+      "ood_acc": 98.18181818181819,
+      "noise_drop": 0.6060606060606091,
+      "cry_auc": 100.0,
+      "conformal_cov": 100.0,
+      "set_size": 1.0,
+      "latency_ms": 203.74023914337158
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 84.24242424242424,
+      "noise_drop": 15.757575757575765,
+      "cry_auc": 100.0,
+      "conformal_cov": 98.79518072289156,
+      "set_size": 0.9879518072289156,
+      "latency_ms": 423.27191829681396
+    },
+    "PCMT-Trio + Novelty (PINO-Graph)": {
+      "clean_acc": 96.96969696969697,
+      "peak_acc": 96.96969696969697,
+      "macro_f1": 97.3738533285502,
+      "ood_acc": 92.72727272727272,
+      "noise_drop": 4.242424242424249,
+      "cry_auc": 100.0,
+      "conformal_cov": 96.3855421686747,
+      "set_size": 0.9879518072289156,
+      "latency_ms": 588.967752456665
+    },
+    "PCMT-Trio + Google-C2S (Unmasking)": {
+      "clean_acc": 97.57575757575758,
+      "peak_acc": 97.57575757575758,
+      "macro_f1": 97.94330916282135,
+      "ood_acc": 93.33333333333333,
+      "noise_drop": 4.242424242424249,
+      "cry_auc": 100.0,
+      "conformal_cov": 92.7710843373494,
+      "set_size": 0.9518072289156626,
+      "latency_ms": 723.4538793563843
+    },
+    "PCMT-Ultra (TransgeneFlow-PINO)": {
+      "clean_acc": 96.96969696969697,
+      "peak_acc": 96.96969696969697,
+      "macro_f1": 97.43547591648858,
+      "ood_acc": 93.33333333333333,
+      "noise_drop": 3.6363636363636402,
+      "cry_auc": 100.0,
+      "conformal_cov": 98.79518072289156,
+      "set_size": 1.0,
+      "latency_ms": 899.6049404144287
+    }
+  },
+  "3. Solanum-Lycopersicum (Tomato Leaf HD)": {
+    "PCMT-Standard": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 95.55555555555556,
+      "set_size": 0.9555555555555556,
+      "latency_ms": 228.4255027770996
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 92.22222222222223,
+      "set_size": 0.9222222222222223,
+      "latency_ms": 423.21629524230957
+    },
+    "PCMT-Trio + Novelty (PINO-Graph)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 96.66666666666667,
+      "set_size": 0.9666666666666667,
+      "latency_ms": 569.9450254440308
+    },
+    "PCMT-Trio + Google-C2S (Unmasking)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 96.66666666666667,
+      "set_size": 0.9666666666666667,
+      "latency_ms": 998.182225227356
+    },
+    "PCMT-Ultra (TransgeneFlow-PINO)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 98.88888888888889,
+      "set_size": 0.9888888888888889,
+      "latency_ms": 878.8610458374023
+    }
+  },
+  "4. Arabidopsis-8um (Visium HD Authentic)": {
+    "PCMT-Standard": {
+      "clean_acc": 66.50246305418719,
+      "peak_acc": 66.50246305418719,
+      "macro_f1": 64.50965133023986,
+      "ood_acc": 42.364532019704434,
+      "noise_drop": 24.137931034482754,
+      "cry_auc": 84.91874752279031,
+      "conformal_cov": 96.07843137254902,
+      "set_size": 2.264705882352941,
+      "latency_ms": 230.25031089782715
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 65.51724137931035,
+      "peak_acc": 65.51724137931035,
+      "macro_f1": 63.18601088245648,
+      "ood_acc": 61.083743842364534,
+      "noise_drop": 4.433497536945815,
+      "cry_auc": 84.20531113753468,
+      "conformal_cov": 98.0392156862745,
+      "set_size": 3.264705882352941,
+      "latency_ms": 426.1150360107422
+    },
+    "PCMT-Trio + Novelty (PINO-Graph)": {
+      "clean_acc": 69.45812807881774,
+      "peak_acc": 69.45812807881774,
+      "macro_f1": 67.93286324705645,
+      "ood_acc": 56.65024630541872,
+      "noise_drop": 12.807881773399018,
+      "cry_auc": 78.3392786365438,
+      "conformal_cov": 99.01960784313727,
+      "set_size": 4.254901960784314,
+      "latency_ms": 606.3647508621216
+    },
+    "PCMT-Trio + Google-C2S (Unmasking)": {
+      "clean_acc": 69.95073891625616,
+      "peak_acc": 69.95073891625616,
+      "macro_f1": 68.70492941693362,
+      "ood_acc": 56.15763546798029,
+      "noise_drop": 13.793103448275865,
+      "cry_auc": 78.69599682917162,
+      "conformal_cov": 99.01960784313727,
+      "set_size": 5.7745098039215685,
+      "latency_ms": 670.1858997344971
+    },
+    "PCMT-Ultra (TransgeneFlow-PINO)": {
+      "clean_acc": 72.41379310344827,
+      "peak_acc": 72.41379310344827,
+      "macro_f1": 71.30392411487429,
+      "ood_acc": 53.69458128078818,
+      "noise_drop": 18.719211822660093,
+      "cry_auc": 74.59373761395163,
+      "conformal_cov": 98.0392156862745,
+      "set_size": 5.980392156862745,
+      "latency_ms": 789.599871635437
+    }
+  },
+  "5. Glycine-Max (Soybean Cotyledon)": {
+    "PCMT-Standard": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 98.71794871794873,
+      "set_size": 0.9871794871794872,
+      "latency_ms": 226.73075199127197
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 98.71794871794873,
+      "set_size": 0.9871794871794872,
+      "latency_ms": 1063.8711214065552
+    },
+    "PCMT-Trio + Novelty (PINO-Graph)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 98.71794871794873,
+      "set_size": 0.9871794871794872,
+      "latency_ms": 503.22384834289545
+    },
+    "PCMT-Trio + Google-C2S (Unmasking)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 94.87179487179486,
+      "set_size": 0.9487179487179487,
+      "latency_ms": 676.8515825271606
+    },
+    "PCMT-Ultra (TransgeneFlow-PINO)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "conformal_cov": 94.87179487179486,
+      "set_size": 0.9487179487179487,
+      "latency_ms": 676.5678405761719
+    }
+  }
+}
