@@ -97,6 +97,8 @@ class AgroTopFlowEngine(nn.Module):
         self.norm_final = nn.LayerNorm(d_model)
 
     def forward(self, patch_features, gene_expr, coords=None):
+        if patch_features.dim() == 2:
+            patch_features = patch_features.unsqueeze(1)
         B, N, _ = patch_features.shape
         
         # Phase 1: Microscopic Riemannian & Cell Wall Metrics

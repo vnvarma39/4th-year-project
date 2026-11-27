@@ -50,6 +50,8 @@ class RiemannianMetricEstimator(nn.Module):
         self.alpha_w = nn.Parameter(torch.tensor(2.5)) # Wall impedance scaling
 
     def forward(self, patch_features):
+        if patch_features.dim() == 2:
+            patch_features = patch_features.unsqueeze(1)
         B, N, _ = patch_features.shape
         h = self.feature_proj(patch_features)
         raw_params = self.metric_head(h)
@@ -324,6 +326,8 @@ class RMNO_Hodge_Classifier(nn.Module):
         self.certification_head = FisherRaoCertificationHead(in_features=64, num_classes=num_classes)
 
     def forward(self, patch_features, gene_expr, coords=None):
+        if patch_features.dim() == 2:
+            patch_features = patch_features.unsqueeze(1)
         # 1. Estimate anisotropic metric tensor g_ij(x)
         metric_info = self.metric_estimator(patch_features)
         h_vis0 = metric_info["features"]
