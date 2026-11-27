@@ -148,9 +148,10 @@ def get_seven_plant_datasets():
     # 3. Arabidopsis thaliana (Authentic 10x Genomics Visium HD 8µm)
     cache_path = r"E:\NIKHIL\startup\agri-rna\PCMT_Project\cached_authentic_plant_dataset.pt"
     cache = torch.load(cache_path, weights_only=False)
+    n_clu = cache.get("num_classes", 3)
     datasets["3. Arabidopsis-8um (Authentic Visium HD)"] = (
         (cache["X_vis_train"], cache["coords_train"], cache["X_gene_train"], cache["y_train"]),
-        (cache["X_vis_val"], cache["coords_val"], cache["X_gene_val"], cache["y_val"]), 7
+        (cache["X_vis_val"], cache["coords_val"], cache["X_gene_val"], cache["y_val"]), n_clu
     )
 
     # 4. Solanum lycopersicum (Tomato Leaf Micro-spatial HD)

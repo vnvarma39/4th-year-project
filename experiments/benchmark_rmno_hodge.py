@@ -126,8 +126,9 @@ def get_datasets():
     # 3. Authentic Arabidopsis 8µm Visium HD (Real 10x Genomics Sequencing)
     cache_path = r"E:\NIKHIL\startup\agri-rna\PCMT_Project\cached_authentic_plant_dataset.pt"
     cache = torch.load(cache_path, weights_only=False)
+    n_clu = cache.get("num_classes", 3)
     ds_arab = (cache["X_vis_train"], cache["coords_train"], cache["X_gene_train"], cache["y_train"]), \
-              (cache["X_vis_val"], cache["coords_val"], cache["X_gene_val"], cache["y_val"]), 7
+              (cache["X_vis_val"], cache["coords_val"], cache["X_gene_val"], cache["y_val"]), n_clu
 
     return {
         "1. Gossypium-Bt-Cotton (Target Transgenic)": ds_cotton,
