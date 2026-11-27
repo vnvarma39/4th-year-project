@@ -1,0 +1,62 @@
+{
+  "Trio-Baseline (Current)": {
+    "val_acc": 68.96551724137932,
+    "peak_acc": 68.96551724137932,
+    "macro_f1": 67.3867943929182,
+    "ood_acc": 58.620689655172406,
+    "noise_drop": 10.344827586206911,
+    "cry_auc": 89.51248513674197,
+    "conformal_cov": 99.01960784313727,
+    "set_size": 3.450980392156863,
+    "latency_ms": 63.33762804667155,
+    "gain_over_baseline": 0.9655172413793167
+  },
+  "Trio + MH-OT (Multi-Head Sinkhorn & Gene Bypass)": {
+    "val_acc": 68.96551724137932,
+    "peak_acc": 68.96551724137932,
+    "macro_f1": 66.93513232849595,
+    "ood_acc": 66.99507389162561,
+    "noise_drop": 1.9704433497537082,
+    "cry_auc": 93.05588585017834,
+    "conformal_cov": 95.09803921568627,
+    "set_size": 2.2941176470588234,
+    "latency_ms": 346.01043065388996,
+    "gain_over_baseline": 0.9655172413793167
+  },
+  "Trio + PINO-Graph (2D Coordinate Spatial Diffusion)": {
+    "val_acc": 75.86206896551724,
+    "peak_acc": 75.86206896551724,
+    "macro_f1": 74.46163854320548,
+    "ood_acc": 66.50246305418719,
+    "noise_drop": 9.35960591133005,
+    "cry_auc": 93.38882282996433,
+    "conformal_cov": 98.0392156862745,
+    "set_size": 1.7647058823529411,
+    "latency_ms": 343.39866638183594,
+    "gain_over_baseline": 7.862068965517238
+  },
+  "Trio + CausalDeep (Counterfactual & Multi-Task)": {
+    "val_acc": 69.95073891625616,
+    "peak_acc": 69.95073891625616,
+    "macro_f1": 68.39015848438461,
+    "ood_acc": 61.57635467980296,
+    "noise_drop": 8.374384236453196,
+    "cry_auc": 90.4399524375743,
+    "conformal_cov": 98.0392156862745,
+    "set_size": 2.5686274509803924,
+    "latency_ms": 263.8757069905599,
+    "gain_over_baseline": 1.9507389162561566
+  },
+  "Trio-v3-Synergy (Full Architectural Breakthrough)": {
+    "val_acc": 75.36945812807882,
+    "peak_acc": 75.36945812807882,
+    "macro_f1": 74.90205179395673,
+    "ood_acc": 59.60591133004927,
+    "noise_drop": 15.763546798029552,
+    "cry_auc": 93.49583828775268,
+    "conformal_cov": 99.01960784313727,
+    "set_size": 1.5490196078431373,
+    "latency_ms": 476.1141777038574,
+    "gain_over_baseline": 7.3694581280788185
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "cycle": 0,
+    "description": "Initial Supervised Seed Model",
+    "accepted_pseudo_labels": 0,
+    "acceptance_rate_pct": 0.0,
+    "metrics": {
+      "accuracy": 68.4729064039409,
+      "f1": 67.20427186871903,
+      "noise_acc": 65.51724137931035,
+      "noise_drop": 2.955665024630548,
+      "conformal_ambiguity": 2.9113300492610836,
+      "latency_ms": 138.62072504483737
+    }
+  },
+  {
+    "cycle": 1,
+    "description": "Conformal-Gated Pseudo-Label Expansion",
+    "accepted_pseudo_labels": 75,
+    "acceptance_rate_pct": 12.5,
+    "metrics": {
+      "accuracy": 67.48768472906403,
+      "f1": 66.04296598164805,
+      "noise_acc": 64.5320197044335,
+      "noise_drop": 2.955665024630534,
+      "conformal_ambiguity": 3.270935960591133,
+      "latency_ms": 139.67266449561487
+    }
+  },
+  {
+    "cycle": 2,
+    "description": "Adversarial Morphogenetic Hard-Negative Mining",
+    "accepted_pseudo_labels": 75,
+    "acceptance_rate_pct": 12.5,
+    "metrics": {
+      "accuracy": 66.00985221674877,
+      "f1": 64.50662164154743,
+      "noise_acc": 66.00985221674877,
+      "noise_drop": 0.0,
+      "conformal_ambiguity": 3.684729064039409,
+      "latency_ms": 273.318364070012
+    }
+  },
+  {
+    "cycle": 3,
+    "description": "Fisher-Rao Geodesic Self-Distillation",
+    "accepted_pseudo_labels": 75,
+    "acceptance_rate_pct": 12.5,
+    "metrics": {
+      "accuracy": 66.99507389162561,
+      "f1": 65.67905859827998,
+      "noise_acc": 65.51724137931035,
+      "noise_drop": 1.4778325123152598,
+      "conformal_ambiguity": 3.5172413793103448,
+      "latency_ms": 284.33000124417816
+    }
+  },
+  {
+    "cycle": 4,
+    "description": "Curriculum Noise Tightening & Boundary Hardening",
+    "accepted_pseudo_labels": 75,
+    "acceptance_rate_pct": 12.5,
+    "metrics": {
+      "accuracy": 66.00985221674877,
+      "f1": 64.7438480681143,
+      "noise_acc": 65.51724137931035,
+      "noise_drop": 0.49261083743841994,
+      "conformal_ambiguity": 3.684729064039409,
+      "latency_ms": 134.67645645141602
+    }
+  },
+  {
+    "cycle": 5,
+    "description": "Converged Sovereign Pareto Anchor",
+    "accepted_pseudo_labels": 75,
+    "acceptance_rate_pct": 12.5,
+    "metrics": {
+      "accuracy": 66.99507389162561,
+      "f1": 65.72791497865823,
+      "noise_acc": 62.5615763546798,
+      "noise_drop": 4.433497536945808,
+      "conformal_ambiguity": 3.857142857142857,
+      "latency_ms": 156.76362697894757
+    }
+  }
+]
