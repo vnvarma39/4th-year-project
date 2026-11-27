@@ -1,0 +1,366 @@
+{
+  "1. Gossypium-Bt-Cotton (Target Transgenic)": {
+    "Gen-1: RMNO-Hodge-v1 (Baseline)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 576730,
+      "latency_ms": 47.13379012213813
+    },
+    "Gen-2: CSNO (Sheaf-Laplacian)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 99.25925925925925,
+      "noise_drop": 0.7407407407407476,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 1525571,
+      "latency_ms": 50.39162105984158
+    },
+    "Gen-3: SHMO (Symplectic Hamiltonian)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 99.25925925925925,
+      "noise_drop": 0.7407407407407476,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 422689,
+      "latency_ms": 53.25264400906033
+    },
+    "Gen-4: WFR-Operator (Wasserstein-Fisher-Rao)": {
+      "clean_acc": 96.29629629629629,
+      "f1": 96.01494396014945,
+      "auc": 99.8888888888889,
+      "noise_acc": 97.03703703703704,
+      "noise_drop": -0.7407407407407476,
+      "conformal_set_size": 1.0148148148148148,
+      "params": 542403,
+      "latency_ms": 33.93236796061198
+    },
+    "Gen-5: AgroTop-Flow Engine (Grand Unified)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 1451245,
+      "latency_ms": 117.9819901784261
+    }
+  },
+  "2. Nicotiana-Transgenic (Cry Bioassay)": {
+    "Gen-1: RMNO-Hodge-v1 (Baseline)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 99.25925925925925,
+      "noise_drop": 0.7407407407407476,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 576794,
+      "latency_ms": 61.793433295355904
+    },
+    "Gen-2: CSNO (Sheaf-Laplacian)": {
+      "clean_acc": 94.81481481481482,
+      "f1": 94.61339252682205,
+      "auc": 99.5483415666902,
+      "noise_acc": 95.55555555555556,
+      "noise_drop": -0.7407407407407334,
+      "conformal_set_size": 1.0592592592592593,
+      "params": 1525635,
+      "latency_ms": 47.864278157552086
+    },
+    "Gen-3: SHMO (Symplectic Hamiltonian)": {
+      "clean_acc": 96.29629629629629,
+      "f1": 96.15242323344432,
+      "auc": 99.72477064220185,
+      "noise_acc": 93.33333333333333,
+      "noise_drop": 2.962962962962962,
+      "conformal_set_size": 1.0074074074074073,
+      "params": 422753,
+      "latency_ms": 62.44296497768826
+    },
+    "Gen-4: WFR-Operator (Wasserstein-Fisher-Rao)": {
+      "clean_acc": 26.666666666666668,
+      "f1": 15.971316733002205,
+      "auc": 52.128078166860334,
+      "noise_acc": 26.666666666666668,
+      "noise_drop": 0.0,
+      "conformal_set_size": 4.8,
+      "params": 542467,
+      "latency_ms": 29.607163535224068
+    },
+    "Gen-5: AgroTop-Flow Engine (Grand Unified)": {
+      "clean_acc": 99.25925925925925,
+      "f1": 99.23048464668886,
+      "auc": 99.88708539167256,
+      "noise_acc": 93.33333333333333,
+      "noise_drop": 5.925925925925924,
+      "conformal_set_size": 0.9777777777777777,
+      "params": 1451309,
+      "latency_ms": 110.4286511739095
+    }
+  },
+  "3. Arabidopsis-8um (Authentic Visium HD)": {
+    "Gen-1: RMNO-Hodge-v1 (Baseline)": {
+      "clean_acc": 64.03940886699507,
+      "f1": 62.945573541725786,
+      "auc": 92.46645150331238,
+      "noise_acc": 61.083743842364534,
+      "noise_drop": 2.955665024630541,
+      "conformal_set_size": 2.5123152709359604,
+      "params": 576922,
+      "latency_ms": 52.102272327129654
+    },
+    "Gen-2: CSNO (Sheaf-Laplacian)": {
+      "clean_acc": 67.98029556650246,
+      "f1": 66.61640972070924,
+      "auc": 92.85997395390973,
+      "noise_acc": 66.99507389162561,
+      "noise_drop": 0.9852216748768541,
+      "conformal_set_size": 2.438423645320197,
+      "params": 1525763,
+      "latency_ms": 45.107254615196815
+    },
+    "Gen-3: SHMO (Symplectic Hamiltonian)": {
+      "clean_acc": 67.48768472906403,
+      "f1": 64.99788002975484,
+      "auc": 91.73602853745541,
+      "noise_acc": 65.51724137931035,
+      "noise_drop": 1.9704433497536797,
+      "conformal_set_size": 3.1822660098522166,
+      "params": 422881,
+      "latency_ms": 96.47310697115384
+    },
+    "Gen-4: WFR-Operator (Wasserstein-Fisher-Rao)": {
+      "clean_acc": 51.231527093596064,
+      "f1": 46.03973113527505,
+      "auc": 82.1640903686088,
+      "noise_acc": 51.724137931034484,
+      "noise_drop": -0.49261083743841994,
+      "conformal_set_size": 4.315270935960591,
+      "params": 542595,
+      "latency_ms": 37.76752031766451
+    },
+    "Gen-5: AgroTop-Flow Engine (Grand Unified)": {
+      "clean_acc": 69.45812807881774,
+      "f1": 68.15684664400811,
+      "auc": 93.256327501274,
+      "noise_acc": 67.98029556650246,
+      "noise_drop": 1.477832512315274,
+      "conformal_set_size": 2.5960591133004924,
+      "params": 1451437,
+      "latency_ms": 126.07009594257062
+    }
+  },
+  "4. Solanum-Lycopersicum (Tomato Trichome HD)": {
+    "Gen-1: RMNO-Hodge-v1 (Baseline)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 576858,
+      "latency_ms": 42.49718454149034
+    },
+    "Gen-2: CSNO (Sheaf-Laplacian)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 1525699,
+      "latency_ms": 40.91538323296441
+    },
+    "Gen-3: SHMO (Symplectic Hamiltonian)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 422817,
+      "latency_ms": 65.44923782348633
+    },
+    "Gen-4: WFR-Operator (Wasserstein-Fisher-Rao)": {
+      "clean_acc": 28.888888888888886,
+      "f1": 20.979398017441497,
+      "auc": 61.527494517373725,
+      "noise_acc": 28.888888888888886,
+      "noise_drop": 0.0,
+      "conformal_set_size": 5.770370370370371,
+      "params": 542531,
+      "latency_ms": 47.97079828050401
+    },
+    "Gen-5: AgroTop-Flow Engine (Grand Unified)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 99.25925925925925,
+      "noise_drop": 0.7407407407407476,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 1451373,
+      "latency_ms": 119.51851844787598
+    }
+  },
+  "5. Glycine-max (Soybean Transgenic)": {
+    "Gen-1: RMNO-Hodge-v1 (Baseline)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 576794,
+      "latency_ms": 42.88077354431152
+    },
+    "Gen-2: CSNO (Sheaf-Laplacian)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 1525635,
+      "latency_ms": 56.4270814259847
+    },
+    "Gen-3: SHMO (Symplectic Hamiltonian)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 422753,
+      "latency_ms": 59.38336584303114
+    },
+    "Gen-4: WFR-Operator (Wasserstein-Fisher-Rao)": {
+      "clean_acc": 32.592592592592595,
+      "f1": 30.13532612623505,
+      "auc": 74.4177890895962,
+      "noise_acc": 31.11111111111111,
+      "noise_drop": 1.4814814814814845,
+      "conformal_set_size": 4.42962962962963,
+      "params": 542467,
+      "latency_ms": 34.76225005255805
+    },
+    "Gen-5: AgroTop-Flow Engine (Grand Unified)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 1451309,
+      "latency_ms": 122.93288442823622
+    }
+  },
+  "6. Zea-mays (Maize Shoot Meristem)": {
+    "Gen-1: RMNO-Hodge-v1 (Baseline)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 576794,
+      "latency_ms": 46.94122738308377
+    },
+    "Gen-2: CSNO (Sheaf-Laplacian)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 99.25925925925925,
+      "noise_drop": 0.7407407407407476,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 1525635,
+      "latency_ms": 48.429012298583984
+    },
+    "Gen-3: SHMO (Symplectic Hamiltonian)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 422753,
+      "latency_ms": 63.399553298950195
+    },
+    "Gen-4: WFR-Operator (Wasserstein-Fisher-Rao)": {
+      "clean_acc": 25.185185185185183,
+      "f1": 12.234432234432235,
+      "auc": 59.38184291137289,
+      "noise_acc": 25.185185185185183,
+      "noise_drop": 0.0,
+      "conformal_set_size": 4.777777777777778,
+      "params": 542467,
+      "latency_ms": 34.318765004475914
+    },
+    "Gen-5: AgroTop-Flow Engine (Grand Unified)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 1451309,
+      "latency_ms": 130.24693065219455
+    }
+  },
+  "7. Oryza-sativa (Rice Sheath Transgenic)": {
+    "Gen-1: RMNO-Hodge-v1 (Baseline)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 576794,
+      "latency_ms": 38.124137454562714
+    },
+    "Gen-2: CSNO (Sheaf-Laplacian)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 1525635,
+      "latency_ms": 45.46936353047689
+    },
+    "Gen-3: SHMO (Symplectic Hamiltonian)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 422753,
+      "latency_ms": 61.53662999471029
+    },
+    "Gen-4: WFR-Operator (Wasserstein-Fisher-Rao)": {
+      "clean_acc": 93.33333333333333,
+      "f1": 93.47829832903173,
+      "auc": 99.64594598917135,
+      "noise_acc": 93.33333333333333,
+      "noise_drop": 0.0,
+      "conformal_set_size": 1.1851851851851851,
+      "params": 542467,
+      "latency_ms": 32.102929221259224
+    },
+    "Gen-5: AgroTop-Flow Engine (Grand Unified)": {
+      "clean_acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "noise_acc": 100.0,
+      "noise_drop": 0.0,
+      "conformal_set_size": 0.9703703703703703,
+      "params": 1451309,
+      "latency_ms": 131.0647063785129
+    }
+  }
+}
