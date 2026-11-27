@@ -1,0 +1,164 @@
+{
+  "1. Gossypium-Bt-Cotton (Target Transgenic)": {
+    "PCMT-Standard": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "set_size": 1.0,
+      "latency_ms": 561.1344575881958,
+      "flux_diff": 0.0,
+      "flux_curl": 0.0,
+      "flux_harm": 0.0
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "set_size": 1.0,
+      "latency_ms": 373.6314296722412,
+      "flux_diff": 0.0,
+      "flux_curl": 0.0,
+      "flux_harm": 0.0
+    },
+    "PCMT-Trio + Google-C2S": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 98.66666666666667,
+      "noise_drop": 1.3333333333333286,
+      "cry_auc": 100.0,
+      "set_size": 0.9866666666666667,
+      "latency_ms": 565.8818244934082,
+      "flux_diff": 0.0,
+      "flux_curl": 0.0,
+      "flux_harm": 0.0
+    },
+    "RMNO-Hodge (Novelty)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 100.0,
+      "noise_drop": 0.0,
+      "cry_auc": 100.0,
+      "set_size": 0.96,
+      "latency_ms": 269.11683082580566,
+      "flux_diff": 5.501050519943237,
+      "flux_curl": 2.7505253553390503,
+      "flux_harm": 0.7103081703186035
+    }
+  },
+  "2. Nicotiana-Transgenic (Cry Bioassay)": {
+    "PCMT-Standard": {
+      "clean_acc": 97.77777777777777,
+      "peak_acc": 97.77777777777777,
+      "macro_f1": 97.59903961584634,
+      "ood_acc": 91.85185185185185,
+      "noise_drop": 5.925925925925924,
+      "cry_auc": 100.0,
+      "set_size": 1.0441176470588236,
+      "latency_ms": 363.02006244659424,
+      "flux_diff": 0.0,
+      "flux_curl": 0.0,
+      "flux_harm": 0.0
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 97.77777777777777,
+      "peak_acc": 97.77777777777777,
+      "macro_f1": 97.59903961584634,
+      "ood_acc": 91.11111111111111,
+      "noise_drop": 6.666666666666657,
+      "cry_auc": 100.0,
+      "set_size": 0.9558823529411765,
+      "latency_ms": 421.08170986175537,
+      "flux_diff": 0.0,
+      "flux_curl": 0.0,
+      "flux_harm": 0.0
+    },
+    "PCMT-Trio + Google-C2S": {
+      "clean_acc": 99.25925925925925,
+      "peak_acc": 99.25925925925925,
+      "macro_f1": 99.19967987194879,
+      "ood_acc": 94.81481481481482,
+      "noise_drop": 4.444444444444429,
+      "cry_auc": 100.0,
+      "set_size": 0.9705882352941176,
+      "latency_ms": 640.5304431915283,
+      "flux_diff": 0.0,
+      "flux_curl": 0.0,
+      "flux_harm": 0.0
+    },
+    "RMNO-Hodge (Novelty)": {
+      "clean_acc": 100.0,
+      "peak_acc": 100.0,
+      "macro_f1": 100.0,
+      "ood_acc": 85.18518518518519,
+      "noise_drop": 14.81481481481481,
+      "cry_auc": 100.0,
+      "set_size": 0.9852941176470589,
+      "latency_ms": 302.41546630859375,
+      "flux_diff": 3.7566616535186768,
+      "flux_curl": 1.8783308267593384,
+      "flux_harm": 0.7852842145495944
+    }
+  },
+  "3. Arabidopsis-8um (Authentic Visium HD)": {
+    "PCMT-Standard": {
+      "clean_acc": 66.50246305418719,
+      "peak_acc": 66.50246305418719,
+      "macro_f1": 64.26506621889325,
+      "ood_acc": 59.60591133004927,
+      "noise_drop": 6.896551724137922,
+      "cry_auc": 80.36068172810147,
+      "set_size": 5.254901960784314,
+      "latency_ms": 352.187442779541,
+      "flux_diff": 0.0,
+      "flux_curl": 0.0,
+      "flux_harm": 0.0
+    },
+    "PCMT-Trio (Baseline)": {
+      "clean_acc": 66.00985221674877,
+      "peak_acc": 66.00985221674877,
+      "macro_f1": 64.42620491849863,
+      "ood_acc": 53.20197044334976,
+      "noise_drop": 12.80788177339901,
+      "cry_auc": 80.49940546967895,
+      "set_size": 3.823529411764706,
+      "latency_ms": 425.3767967224121,
+      "flux_diff": 0.0,
+      "flux_curl": 0.0,
+      "flux_harm": 0.0
+    },
+    "PCMT-Trio + Google-C2S": {
+      "clean_acc": 70.93596059113301,
+      "peak_acc": 70.93596059113301,
+      "macro_f1": 69.73180103288809,
+      "ood_acc": 58.128078817733986,
+      "noise_drop": 12.807881773399025,
+      "cry_auc": 89.25881886642885,
+      "set_size": 2.2254901960784315,
+      "latency_ms": 693.450927734375,
+      "flux_diff": 0.0,
+      "flux_curl": 0.0,
+      "flux_harm": 0.0
+    },
+    "RMNO-Hodge (Novelty)": {
+      "clean_acc": 66.50246305418719,
+      "peak_acc": 66.50246305418719,
+      "macro_f1": 65.50849150849152,
+      "ood_acc": 53.69458128078818,
+      "noise_drop": 12.80788177339901,
+      "cry_auc": 86.40507332540625,
+      "set_size": 2.264705882352941,
+      "latency_ms": 352.0789861679077,
+      "flux_diff": 4.605143180260291,
+      "flux_curl": 2.30257156262031,
+      "flux_harm": 0.83085075708536
+    }
+  }
+}
